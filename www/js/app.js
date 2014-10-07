@@ -28,7 +28,6 @@ angular.module('imusic', ['ionic','imusic.controllers', 'imusic.services',])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-
     // setup an abstract state for the tabs directive
     .state('music', {
       url: "/music",
@@ -39,7 +38,7 @@ angular.module('imusic', ['ionic','imusic.controllers', 'imusic.services',])
     .state('music.list', {
       url: '/list',
       views: {
-        'music-list': {
+        'menuContent': {
           templateUrl: 'templates/music-list.html',
           controller: 'MusicListCtrl'
         }
@@ -48,16 +47,25 @@ angular.module('imusic', ['ionic','imusic.controllers', 'imusic.services',])
     .state('music.songbook', {
       url: '/songbook',
       views: {
-        'music-songbook': {
+        'menuContent': {
           templateUrl: 'templates/music-songbook.html',
           controller: 'SongBookCtrl'
+        }
+      }
+    })
+     .state('music.search', {
+      url: '/search',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/music-search.html',
+          controller: 'SearchCtrl'
         }
       }
     })
     .state('music.like', {
       url: '/like',
       views: {
-        'tab-friends': {
+        'menuContent': {
           templateUrl: 'templates/music-like.html',
           controller: 'MusicLikeCtrl'
         }
@@ -66,7 +74,7 @@ angular.module('imusic', ['ionic','imusic.controllers', 'imusic.services',])
     .state('music.detail', {
       url: '/detail/:playlistId',
       views: {
-        'tab-account': {
+        'menuContent': {
           templateUrl: 'templates/music-detail.html',
           controller: 'MusicDetailCtrl'
         }

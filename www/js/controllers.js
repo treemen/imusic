@@ -1,6 +1,9 @@
 angular.module('imusic.controllers', [])
-.controller('MusicListCtrl', ['$scope', function($scope){
+/*歌曲列表*/
+.controller('MusicListCtrl', ['$scope','$http', function($scope,$http){
 	
+
+
 }])
 .controller('SongBookCtrl', ['$scope', function($scope){
 	
@@ -9,5 +12,8 @@ angular.module('imusic.controllers', [])
 	
 }])
 .controller('MusicDetailCtrl', ['$scope', function($scope){
+	
+}])
+.controller('SearchCtrl', ['$scope', function($scope){
 	
 }]);
