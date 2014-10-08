@@ -32,7 +32,13 @@ angular.module('imusic', ['ionic','imusic.controllers', 'imusic.services',])
     .state('music', {
       url: "/music",
       abstract: true,
-      templateUrl: "templates/menu.html"
+      templateUrl: "templates/menu.html",
+      controller:function($scope){
+        //接入微信浏览器判断，主要判断WeixinJSBridge，如果存在则显示收藏，负责隐藏
+        if (typeof WeixinJSBridge == "undefined"){
+          $scope.isWeChat = false;
+        }
+      }
     })
     // Each tab has its own nav history stack:
     .state('music.list', {

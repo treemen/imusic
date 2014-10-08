@@ -7,23 +7,23 @@
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
-  <ion-side-menu side="left" width="150">
+  <ion-side-menu side="left"  width="150">
     <header class="bar bar-header bar-stable">
       <h1 class="title">imusic</h1>
     </header>
     <ion-content class="has-header">
       <ion-list>
         <ion-item nav-clear menu-close href="#/music/list">
-          广场
+            <i class="icon ion-home"></i>  广场
         </ion-item>
-         <ion-item nav-clear menu-close href="#/music/songbook">
-          排行
+         <ion-item nav-clear menu-close href="#/music/songbook"> 
+            <i class="ion-connection-bars"></i>   排行
         </ion-item>
          <ion-item nav-clear menu-close href="#/music/search">
-          搜索
+         <i class="ion-search"></i>  搜索
         </ion-item>
-         <ion-item nav-clear menu-close href="#/music/like">
-          收藏
+         <ion-item nav-clear menu-close href="#/music/like" ng-show="isWeChat">
+         <<i class="ion-person-add"></i> 收藏
         </ion-item>
       </ion-list>
     </ion-content>
