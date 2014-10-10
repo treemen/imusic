@@ -26,17 +26,19 @@
   <body ng-app="imusic" animation="slide-left-right-ios7">
     <ion-nav-view></ion-nav-view>
     <!-- 底部歌曲条-->
-    <div class="bar bar-footer bar-stable" style="padding:0px;">
-       <div class="row" style="padding:0px;">
+    <div class="bar bar-footer bar-stable no-padding" style="background-color: 
+    rgba(51, 0, 255, 0.24);">
+       <div class="row no-padding">
           <!-- 图像 -->
           <div class="col col-20 center">
              <img src="../img/logo.png" alt="">
           </div>
           <!-- 控制条 -->
             <div class="col col-50"style="padding:0px;">
-                <div class="range" style="padding:0px;height:22px;">
+                <div class="range range-royal no-padding" style="height:22px;" name="volume" >
                     <i>1:12</i>
                     <input type="range" name="volume" style="height:22px;">
+
                     <i>3:12</i>
                 </div>
                 <p><span>传奇</span>——<span>王菲</span></p>
@@ -44,9 +46,11 @@
           <!-- 控制按钮 -->
           <div class="col col-30 center">
               <div class="row" style="height:100%;">
-                 <div class="col col-27" style="background-color: yellow;"></div>
-                 <div class="col col-56" style="background-color: black;"></div>
-                 <div class="col col-27" style="background-color: green;"></div>
+                 <div class="col col-27">
+                     <i></i>
+                 </div>
+                 <div class="col col-56"></div>
+                 <div class="col col-27"></div>
               </div>
           </div>
         </div>
