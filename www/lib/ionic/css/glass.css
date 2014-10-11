@@ -1,14 +1,3 @@
-/* Empty. Add your own CSS if you like */
-.center{
-	text-align: center;
-}
-.no-padding{
-	padding: 0px;
-}
-.no-margin{
-	margin: 0px;
-}
-/* glass 毛玻璃的效果 */
 .ionic-contrib-blur {
   overflow: hidden;
 	position:absolute;
